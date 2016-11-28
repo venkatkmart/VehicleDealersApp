@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app='vehicleDealers'>
+
+<head>
+    <title>{{appName}}</title>
+    <link rel="stylesheet" href="content/css/bootstrap.css">
+    <link rel="stylesheet" href="content/css/bootstrap-theme.css">
+    <script src="vendor/jquery-2.2.0.js"></script>
+    <script src="vendor/bootstrap.js"></script>
+    <script src="vendor/angular.min.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-controller='mainCtrl'>
+        <div custom-nav-bar nav-items="tabs"></div>
+        <div ng-include="'app/register/register.tpl.html'"></div>
+
+
+    </div>
+    <!--login Start-->
+    <script src="app/login/login.js"></script>
+    <!--login end-->
+    <!--register Start-->
+    <script src="app/register/register.js"></script>
+    <script src="app/register/registerCtrl.js"></script>
+    <!--register end-->
+    <!--vehicles Start-->
+    <script src="app/vehicles/vehicles.js">
+
+
+    </script>
+    <script src="app/vehicles/vehicleSvc.js"></script>
+    <script src="app/vehicles/vehicleCtrl.js"></script>
+    <!-- Vehicles End-->
+
+    <script src="app/app.js"></script>
+    <script src="app/navbar/navbarService.js"></script>
+    <script src="app/navbar/mainCtrl.js"></script>
+    <script src="app/components/customNavBar.js"></script>
+    <script src="app/components/customLogo.js"></script>
+    <script src="app/components/numberOnly.js"></script>
+    <script src="app/components/customClick.js"></script>
+    <script src="app/components/userSvc.js"></script>
+    <script src="app/components/checkuser.js"></script>
+</body>
+
+</html>

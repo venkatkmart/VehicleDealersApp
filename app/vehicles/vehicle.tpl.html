@@ -1,0 +1,23 @@
+<div ng-controller="vehicleCtrl">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Year</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="vehicle in vehicles">
+            <td>{{$index+1}}</td>
+            <td>{{vehicle.year}}</td>
+            <td>{{vehicle.make}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.price}}</td>
+        </tr>
+        
+    </tbody>
+</table>
+    </div>
